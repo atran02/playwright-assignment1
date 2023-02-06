@@ -1,6 +1,10 @@
 import styles from '../styles/Home.module.css'
 
-export default function Button({btnText}) 
+export default function Button({btnText, pLink}) 
 {
-    return <button className={styles.button}>{btnText}</button>
+    return <a href={pLink}>
+        <button className={styles.button}>
+            {btnText}
+        </button>
+    </a>
 }

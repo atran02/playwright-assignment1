@@ -1,6 +1,6 @@
 import styles from '../styles/Home.module.css'
 
-export default function Arrow({arrowType}) 
+export default function Arrow({arrowType, pLink}) 
 {
-    return <button className={styles.arrow}><img src={arrowType}/></button>
+    return <a href={pLink}><span><img className={styles.arrowBtn} src={arrowType}/></span></a>
 }

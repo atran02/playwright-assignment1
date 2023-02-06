@@ -5,9 +5,41 @@ justify-content: space-between;
 align-items: center;
 padding: 6rem;
 min-height: 100vh;
+}
+.mainH {
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: flex-start;
+padding: 6rem;
+min-height: 100vh;
 background-image: url("/background-images/backgroundMountain.jpg");
 background-position: center;
 background-size: cover;
+width: auto;
+height: auto;
+}
+.mainC {
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+align-items: center;
+padding: 6rem;
+min-height: 100vh;
+background-image: url("/background-images/backgroundMountainUpsideDown.jpg");
+background-position: center;
+background-size: cover;
+width: auto;
+height: auto;
+}
+.mainA {
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+align-items: center;
+padding: 6rem;
+min-height: 100vh;
+background-color: var(--quaternary-color);
 width: auto;
 height: auto;
 }
@@ -261,7 +293,7 @@ background-clip: content-box;
 }
 
 /* Tablet and Smaller Desktop */
-@media (min-width: 701px) and (max-width: 1120px) {
+@media (min-width: 600px) and (max-width: 1000px) {
 .grid {
   grid-template-columns: repeat(2, 50%);
 }
@@ -294,12 +326,69 @@ to {
   border: white;
   border-style: solid;
   border-radius: 0.5em;
-  color: white;
+  color: var(--primary-color);
   background-color: #ffffff00;
   margin: 0.5em;
 }
 
 .button:hover{
-  background-color: #ffffff8a;
-  color: black;
+  background-color: var(--primary-color);
+  color: var(--quinary-color);
+}
+
+.arrowBtn{
+  width: 2em;
+  height: 2em;
+  margin: 0.5em;
+}
+
+.arrowDiv{
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  bottom: 10vw;
+  right: 5vh;
+}
+
+.hIcon{
+  width: 2.5em;
+  height: 2.5em;
+  margin: 0.5em;
+}
+.mIcon{
+  width: 2.5em;
+  height: 2.5em;
+  margin: 0.5em;
+}
+.oMenu{
+  background-image: url("/background-images/menuBackground.png");
+  background-position: center;
+  background-size: cover;
+  width: 15em;
+  height: 15em;
+  position: absolute;
+  top: -3vh;
+  left: -3vw;
+}
+
+.oMenu h1{
+  position: relative;
+  left: 1em;
+  top: 1em;
+}
+.oMenu li{
+  position: relative;
+  margin: 1em;
+  left: 3em;
+}
+
+.topSec{
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  top: 0px;
+  gap: 82vw;
+  margin: 2em;
+  align-items: center;
+  left: 0%;
 }

@@ -8,36 +8,31 @@ import Arrow from '../comps/arrow'
 import MenuPopup from '../comps/menu'
 import NavBar from '../comps/nav'
 
-export default function Home() {
+export default function Contact() {
   return (
     <>
       <Head>
-        <title>Home</title>
+        <title>Contact Us</title>
         <meta name="author" content="MDIA 2109" />
-        <meta property="og:title" content="Assignment #1 - Home Page" />
+        <meta property="og:title" content="Assignment #1 - Contact Us Page" />
         <meta property="og:description" content="BCIT Digital Design and Development Diploma" />
         <link rel="icon" href="/favicon.png" />
       </Head>
     
-      <main className={styles.mainH}>
+      <main className={styles.mainC}>
 
         <NavBar/>
 
-        <h1>An investment in knowledge pays the best interest.</h1>
-
-        <p>Different than a college or 
-          university, the British Columbia Institute 
-          of Technology offers practical, flexible, 
-          applied education with instructors who have 
-          direct, hands-on experience in their field.</p>
         
         <div>
-          <Button pLink={'/about'} btnText={'More About Us'}/>
-          <Button pLink={'/contact'} btnText={'Contact Us'}/>
+            <h1>Contact Us</h1>
+            <p>Want to Discuss? Let’s chat!</p>
         </div>
 
+    
+
         <div className={styles.arrowDiv}>
-          <Arrow pLink={'/about'} arrowType={'/icons/downwardArrow.png'}/>
+          <Arrow pLink={'/about'} arrowType={'/icons/upwardArrow.png'}/>
         </div>
 
         {/* <nav>
