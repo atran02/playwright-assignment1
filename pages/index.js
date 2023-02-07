@@ -31,6 +31,8 @@ export default function Home() {
           of Technology offers practical, flexible, 
           applied education with instructors who have 
           direct, hands-on experience in their field.</p>
+
+          <hr/>
         
         <div>
           <Button pLink={'/about'} btnText={'More About Us'}/>

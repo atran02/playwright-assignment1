@@ -22,8 +22,8 @@ height: auto;
 .mainC {
 display: flex;
 flex-direction: column;
-justify-content: space-between;
-align-items: center;
+justify-content: center;
+/* align-items: center; */
 padding: 6rem;
 min-height: 100vh;
 background-image: url("/background-images/backgroundMountainUpsideDown.jpg");
@@ -42,6 +42,19 @@ min-height: 100vh;
 background-color: var(--quaternary-color);
 width: auto;
 height: auto;
+}
+.hPos{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.mainC p{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .description {
@@ -383,14 +396,25 @@ to {
 }
 
 .topSec{
-  display: flex;
+  /* display: flex;
   flex-direction: row;
   position: absolute;
   top: 0px;
   gap: 82vw;
   margin: 2em;
   align-items: center;
+  left: 0%; */
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  top: 0px;
+  /* gap: 82vw; */
+  /* margin: 2em; */
+  padding: 2em;
+  align-items: center;
   left: 0%;
+  width: 100%;
+  justify-content: space-between;
 }
 
 .cArrow{

@@ -33,7 +33,11 @@ export default function About() {
             <NavBar/>
 
             <div>
-                <h1>About Us</h1>
+                <div>
+                    {/* <hr/> */}
+                    <h1 className={styles.hPos}>About Us</h1>
+                    {/* <hr/> */}
+                </div>
 
                 <p>We are proud to deliver an education that 
                     goes beyond textbooks and classrooms.</p>
@@ -87,7 +91,7 @@ export default function About() {
                 </div>
                 
 
-
+                <div className={styles.hPos}>
                 <h1>Departments</h1>
                 <ul>
                     <li>Applied & Natural Sciences</li>
@@ -97,6 +101,7 @@ export default function About() {
                     <li>Health Sciences</li>
                     <li>Trades & Apprenticeships</li>
                 </ul>
+                </div>
             </div>
 
 

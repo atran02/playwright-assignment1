@@ -23,11 +23,50 @@ export default function Contact() {
 
         <NavBar/>
 
-        
         <div>
-            <h1>Contact Us</h1>
+            <h1 className={styles.hPos}>Contact Us</h1>
             <p>Want to Discuss? Let’s chat!</p>
+
+
+          <form>
+            <fieldset>
+              <table>
+                <thead> 
+                  <tr>
+                    <th>
+                      <label>First Name:</label>
+                      <input
+                        placeholder='First Name Here'
+                      />
+                    </th>
+                    <th>
+                      <label>Last Name:</label>
+                      <input
+                        placeholder='Last Name Here'
+                      />
+                    </th>
+                    
+                  </tr>
+                </thead>
+
+                <thead>
+                  <tr>
+                    <th>
+                      <label>Email:</label>
+                      <input
+                        type='email'
+                        placeholder='Email Here'
+                      />
+                    </th>
+                  </tr>
+                </thead>
+              </table>
+            </fieldset>
+          </form>
+
+
         </div>
+        
 
     
 
