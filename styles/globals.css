@@ -18,6 +18,22 @@ a {
 
 #carouselImage{
   background-color: blanchedalmond;
+  height: 200px;
+  width: auto;
+
+  /* background-image: url(''); */
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 40px 0px;
+}
+
+#testOnImageHere{
+  background-color: var(--quinary-color);
+  padding: 10px;
+  margin: 0px 50px;
 }
 
 ul{

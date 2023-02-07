@@ -2,16 +2,21 @@ import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 import Link from 'next/link'
+import { useState } from 'react'
 
 import Button from '../comps/button'
 import Arrow from '../comps/arrow'
 
-import carouselData from '/data/carouselData.js'
+import {carouselData} from '/data/carouselData.js'
 import MenuPopup from '../comps/menu'
 import NavBar from '../comps/nav'
 
 
 export default function About() {
+
+    const [carousel, setCarousel] = useState(0);
+    
+
     return (
         <>
             <Head>
@@ -70,11 +75,17 @@ export default function About() {
                     campus life.</p>
 
                 {/* CAROUSEL */}
-                <div id='carouselImage'>
-                    <div> 
-                        POTATO
+                <div id='carouselImage' style ={{ backgroundImage: `url('/carousel-images/${carousel}.jpg')`}}>
+                        { carouselData && <div id='testOnImageHere'> 
+                            {carouselData[carousel].value}
+                            
+                        </div>}
+                    <div className={styles.cArrowDiv}>
+                        <img onClick={()=>{if(carousel === 0) setCarousel(4); else {setCarousel(carousel-1)}}} className={styles.cArrow} src='/icons/leftArrow.png'/>
+                        <img onClick={()=>{if(carousel === 4) setCarousel(0); else {setCarousel(carousel+1)}}} className={styles.cArrow} src='/icons/rightArrow.png'/>
                     </div>
                 </div>
+                
 
 
                 <h1>Departments</h1>

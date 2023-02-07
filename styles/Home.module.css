@@ -338,7 +338,7 @@ to {
 
 .arrowBtn{
   width: 2em;
-  height: 2em;
+  /* height: 2em; */
   margin: 0.5em;
 }
 
@@ -391,4 +391,16 @@ to {
   margin: 2em;
   align-items: center;
   left: 0%;
+}
+
+.cArrow{
+  width: 2em;
+}
+
+.cArrowDiv{
+  margin: 1em;
+  position: absolute;
+  display: flex;
+  gap: 20em;
+  justify-content: center;
 }

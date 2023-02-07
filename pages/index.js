@@ -25,6 +25,7 @@ export default function Home() {
 
         <h1>An investment in knowledge pays the best interest.</h1>
 
+
         <p>Different than a college or 
           university, the British Columbia Institute 
           of Technology offers practical, flexible, 
